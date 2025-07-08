@@ -36,3 +36,148 @@
     transform: rotate(360deg);
   }
 }
+
+/* Login Page Styles */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+}
+
+.login-form {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  min-width: 320px;
+}
+
+.login-title {
+  margin-bottom: 0.5rem;
+  color: #2d3a4b;
+  font-weight: 700;
+  text-align: center;
+}
+
+.login-input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.login-input:focus {
+  border-color: #6c63ff;
+}
+
+.login-button {
+  padding: 0.75rem 1rem;
+  background: linear-gradient(90deg, #6c63ff 0%, #48c6ef 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-button:hover {
+  background: linear-gradient(90deg, #48c6ef 0%, #6c63ff 100%);
+}
+
+/* FormPage Styles */
+.formpage-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fdf6e3 0%, #e0eafc 100%);
+}
+
+.formpage-form {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  min-width: 350px;
+}
+
+.formpage-title {
+  margin-bottom: 0.5rem;
+  color: #2d3a4b;
+  font-weight: 700;
+  text-align: center;
+}
+
+.formpage-input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.formpage-input:focus {
+  border-color: #48c6ef;
+}
+
+.formpage-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 500px) {
+  .formpage-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.formpage-btn {
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.formpage-btn.save {
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+  color: #fff;
+}
+.formpage-btn.save:hover {
+  background: linear-gradient(90deg, #38f9d7 0%, #43e97b 100%);
+}
+
+.formpage-btn.sync {
+  background: linear-gradient(90deg, #6c63ff 0%, #48c6ef 100%);
+  color: #fff;
+}
+.formpage-btn.sync:hover {
+  background: linear-gradient(90deg, #48c6ef 0%, #6c63ff 100%);
+}
+
+.formpage-btn.pdf {
+  background: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);
+  color: #2d3a4b;
+}
+.formpage-btn.pdf:hover {
+  background: linear-gradient(90deg, #ffd200 0%, #f7971e 100%);
+  color: #fff;
+}
